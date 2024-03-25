@@ -194,20 +194,25 @@ def a_star(start_node, goal_node, display_animation=True):
 
 # Get valid start and goal nodes from user input
 while True:
-    clearance = int(input("Enter the clearance: "))
-    radius = int(input("Enter the robot radius: "))
+    print("NOTE:")
+    print("1) Please give orientation values as {...-60,-30,0,30,60...}")
+    print("2) The step size should be between 1 and 10")
+    print("3) Please be patient, it may take some time to get the output\n")
+
+    clearance = int(input("Clearance from the obstacles: "))
+    radius = int(input("Radius of the robot: "))
     pixels = all_obstacles(clearance, radius)
-    start_node = tuple(map(int, input("Enter the start node (in the format 'x y o'). O should be given in degrees and as a multiple of 30 i.e. {.., -60, -30, 0, 30, 60, ..}: ").split()))
+    start_node = tuple(map(int, input("Enter the start node : ").split()))
     if not check_range(start_node):
-        print("Error: Start node is in the obstacle space, clearance area, out of bounds or orientation was not given in the required format. Please input a valid node.")
+        print("Please reenter a new node!")
         continue
-    goal_node = tuple(map(int, input("Enter the goal node (in the format 'x y o'). O should be given in degrees and as a multiple of 30 i.e. {.., -60, -30, 0, 30, 60, ..}: ").split()))
+    goal_node = tuple(map(int, input("Enter the goal node: ").split()))
     if not check_range(goal_node):
-        print("Error: Goal node is in the obstacle space, clearance area, out of bounds or orientation was not given in the required format. Please input a valid node.")
+        print("Please reenter a new node!")
         continue
-    L = int(input("Enter the step size of the robot in the range 1-10: "))
+    L = int(input("Step size of the robot: "))
     if L < 1 or L > 10:
-        print("Error: Step size should be in the range 1-10. Please input a valid step size.")
+        print("Please reenter the step size as a value between 1 and 10")
         continue
     break
 
