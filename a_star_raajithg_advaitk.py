@@ -220,8 +220,8 @@ while True:
 start_time = time.time()
 path = a_star(start_node,goal_node)
 if path is None:
-    print("\nError: No path found.")
+    print("\npath not found")
 else:
-    print("\nGoal Node Reached!\nShortest Path: ", path, "\n")
+    print("\nreached the goal")
 end_time = time.time()
 print("Runtime:", end_time - start_time, "seconds\n")
