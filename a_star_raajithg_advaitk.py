@@ -122,7 +122,7 @@ def backtrack_path(parents, start_node, goal_node):
 
 # Define the A* algorithm
 def a_star(start_node, goal_node, display_animation=True):
-    threshold = 0.5 # threshold distance
+    threshold = 1.5 # threshold distance
     r = int(map_ybounds / threshold)  # number of rows
     c = int(map_xbounds / threshold)   # number of columns
     angles = int(360 / 30)           # number of angles
