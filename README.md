@@ -35,4 +35,3 @@ The instructions on how to input the coordinates and the orientation will be giv
 **General Note**: The code best runs when the clearance and the robot radius is 1, otherwise, it takes some time, please be patient :)
 
 
-Here is the link to the repo : https://github.com/akin2662/Astar-Algorithm.git
