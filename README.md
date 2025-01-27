@@ -1,32 +1,32 @@
-***ENPM661- ASTAR ALGORITHM***
+# A-star-algorithm-for-2D-point-robot-path-planning
+**Note:** This project was a requirement for the course ENPM 661- Planning for Autonomous Robots at University of Maryland, College Park and was done in collaboration with Raajith Gadam (raajithg@umd.edu)
 
-(Project3 phase1)
+## Project Description:
+This script contains an implementation of the A-star algorithm for a point robot for navigation around obstacles in a 2D space.
 
-***Group:***
-1) G Raajith 
+## Dependencies:
 
-**UID:** 119461167
+* python 3.11 (any version above 3 should work)
+* Python running IDE (We used Pycharm)
 
-**Directory-id:** raajithg
+## Libraries used:
+* NumPy
+* Time
+* HeapQ
+* OpenCv
 
-2) Advait Kinikar
+## Instructions 
+1. Download the zip file and extract it
+	
+2. Install python and the required dependencies: 
 
-**UID:** 120097997
+	`pip install numpy opencv-python`
+	
+3. Run the code or use desired python IDE:
 
-**Directory-id:** kinikara
-
-You would need the following libraries:
-
-**1) OpenCV**
-
-**2) Numpy**
-
-**3) HeapQ**
-
-**4) Time**
+	`$python3 a_star_raajithg_advaitk.py`
 
 Input the clearance, radius, the coordinates and orientation of the robot at start and goal positions and the step size for the robot when  prompted in the terminal.
-
 The instructions on how to input the coordinates and the orientation will be given in the terminal itself
 **NOTE:** When you input the coordinates and the orientation for the start and the goal position, input them such that each value if followed by the next by after a single space. For example if the start position is (10,10,30) where x = 10, y = 10 , angle = 30, then enter it as **10 10 30**. Follow the same procedure for the goal node
 
