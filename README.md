@@ -32,6 +32,9 @@ The instructions on how to input the coordinates and the orientation will be giv
 
 **NOTE:** The step size of the robot should be between 1 and 10
 
+## Demo
+https://github.com/user-attachments/assets/3c140918-41c7-4654-b0db-76bfc7ab5cbe
+
 **General Note**: The code best runs when the clearance and the robot radius is 1, otherwise, it takes some time, please be patient :)
 
 
